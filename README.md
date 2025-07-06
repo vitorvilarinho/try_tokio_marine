@@ -3,17 +3,17 @@
 
 ## Índice
 
-1. [Introdução](#introducao)
-2. [Arquitetura do Projeto](#arquitetura-do-projeto)
-3. [Como Rodar](#como-rodar)
-4. [Estrutura de Pastas](#estrutura-de-pastas)
+1. [Introdução](#1-introdução)
+2. [Arquitetura do Projeto](#2-arquitetura-do-projeto)
+3. [Como Rodar](#3-como-rodar)
+4. [Estrutura de Pastas](#4-estrutura-de-pastas)
 
 ---
 
-## 1. Introdução {#introducao}
+## 1. Introdução
 Este é um projeto desenvolvido por [Vitor Vilarinho](https://github.com/vitorvilarinho) para o processo seletivo da seguradora Tokio Marine 
 
-## 2. Arquitetura do Projeto {#arquitetura-do-projeto}
+## 2. Arquitetura do Projeto
 O projeto utiliza uma arquitetura modular baseada em pacotes, seguindo boas práticas de separação de responsabilidades e escalabilidade. As principais características são:
 
 - **Flutter Modular/Multi-Package**: Cada domínio (core, features, services, design system) é um pacote Dart/Flutter independente, facilitando a manutenção e o reuso.
@@ -25,7 +25,7 @@ O projeto utiliza uma arquitetura modular baseada em pacotes, seguindo boas prá
 
 Essa abordagem permite que novas features e serviços sejam adicionados ou modificados de forma isolada, sem impactar o restante do sistema, além de facilitar a colaboração em equipe e a escalabilidade do projeto.
 
-## 3. Como Rodar {#como-rodar}
+## 3. Como Rodar
 ### Executando no VS Code
 
 1. Abra o projeto no VS Code.
@@ -51,7 +51,7 @@ flutter run -d chrome
 ```
 > O comando acima abrirá o app no navegador padrão usando o Chrome.
 
-## 4. Estrutura de Pastas {#estrutura-de-pastas}
+## 4. Estrutura de Pastas
 O projeto segue uma estrutura modularizada, separando responsabilidades em diferentes pacotes e domínios. Abaixo, um resumo das principais pastas:
 
 - **apps/**: Contém os aplicativos principais do projeto. Exemplo: `tokio_marine_app` (aplicativo Flutter).
