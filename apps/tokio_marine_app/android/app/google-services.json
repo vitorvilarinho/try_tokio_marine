@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "667334835265",
+    "project_id": "tokiomarine-vilarinho",
+    "storage_bucket": "tokiomarine-vilarinho.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:667334835265:android:1af51dd3dd489124f5dac0",
+        "android_client_info": {
+          "package_name": "com.example.tokio_marine_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDppYFaSgtj9wLCjlis6c0QdN0nkgtpBj8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

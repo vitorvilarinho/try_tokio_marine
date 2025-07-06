@@ -1,0 +1,8 @@
+# melos_managed_dependency_overrides: core,db_firestore,user
+dependency_overrides:
+  core:
+    path: ../../core
+  db_firestore:
+    path: ../db_firestore
+  user:
+    path: ../user
