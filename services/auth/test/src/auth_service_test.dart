@@ -61,8 +61,7 @@ void main() {
               firstName: Seeds.firstName,
               lastName: Seeds.lastName,
               email: Seeds.email,
-              middleName: Seeds.middleName,
-              urlProfileAvatar: Seeds.urlProfileAvatar,
+              cpf: Seeds.cpf,
             )));
     authService = AuthServiceImpl(
       signInWithEmailAndPasswordUsecase: SignInWithEmailAndPasswordUsecase(
@@ -162,12 +161,7 @@ void main() {
           )).thenAnswer((_) async => Future.value());
 
       final result = await authService.signUpWithEmailAndPassword(
-        email: Seeds.email,
-        password: Seeds.password,
-        firstName: Seeds.firstName,
-        lastName: Seeds.lastName,
-        middleName: Seeds.middleName,
-        urlProfileAvatar: Seeds.urlProfileAvatar,
+        signUpModel: Seeds.signUpModelodel,
       );
 
       expect(result.isRight(), true);
@@ -184,12 +178,7 @@ void main() {
           )).thenThrow(FirebaseAuthException(code: 'email-already-in-use'));
 
       final result = await authService.signUpWithEmailAndPassword(
-        email: Seeds.email,
-        password: Seeds.password,
-        firstName: Seeds.firstName,
-        lastName: Seeds.lastName,
-        middleName: Seeds.middleName,
-        urlProfileAvatar: Seeds.urlProfileAvatar,
+        signUpModel: Seeds.signUpModelodel,
       );
 
       expect(result.isLeft(), true);

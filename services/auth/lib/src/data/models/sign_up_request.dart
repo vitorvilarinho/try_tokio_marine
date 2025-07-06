@@ -41,5 +41,6 @@ class SignUpRequest extends Equatable {
         firstName,
         lastName,
         authentication,
+        cpf,
       ];
 }

@@ -1,5 +1,6 @@
 // ignore_for_file: lines_longer_than_80_chars
 
+import 'package:auth/src/domain/models/sign_up_model.dart';
 import 'package:user/user.dart';
 
 class Seeds {
@@ -8,8 +9,7 @@ class Seeds {
   static const password = 'password123';
   static const firstName = 'John';
   static const lastName = 'Doe';
-  static const middleName = 'M';
-  static const urlProfileAvatar = 'https://example.com/avatar.png';
+  static const cpf = '12345670088';
   static const refreshToken =
       'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NSIsInR5cGUiOiJyZWZyZXNoIiwiaWF0IjoxNjAwMDAwMDAwLCJleHAiOjE2MDAwODAwMDB9.dQw4w9WgXcQK7Q2vQw4w9WgXcQK7Q2vQw4w9WgXcQK7';
   static const token =
@@ -23,7 +23,13 @@ class Seeds {
     firstName: firstName,
     lastName: lastName,
     email: email,
-    middleName: middleName,
-    urlProfileAvatar: urlProfileAvatar,
+    cpf: cpf,
+  );
+  static const signUpModelodel = SignUpModel(
+    email: email,
+    password: password,
+    firstName: firstName,
+    lastName: lastName,
+    cpf: cpf,
   );
 }

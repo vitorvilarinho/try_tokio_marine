@@ -43,5 +43,6 @@ class SignUpModel extends Equatable {
         firstName,
         lastName,
         password,
+        cpf,
       ];
 }

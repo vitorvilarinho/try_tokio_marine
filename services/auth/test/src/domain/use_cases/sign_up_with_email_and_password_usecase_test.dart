@@ -36,8 +36,7 @@ void main() {
     password: tPassword,
     firstName: 'firstName',
     lastName: 'lastName',
-    middleName: 'M',
-    urlProfileAvatar: 'urlProfileAvatar',
+    cpf: Seeds.cpf,
   );
 
   final tAuthenticationModel = AuthenticationModel(

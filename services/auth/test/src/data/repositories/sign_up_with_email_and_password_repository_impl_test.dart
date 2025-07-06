@@ -9,6 +9,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
 
 import '../../../mocks.dart';
+import '../../../seeds.dart';
 
 void main() {
   late DataSourceService dataSourceService;
@@ -28,23 +29,20 @@ void main() {
 
   setUpAll(() {
     signUpRequest = const SignUpRequest(
-      authentication: AuthenticationRequest(
-        email: 'test@example.com',
-        password: 'password123',
-      ),
-      firstName: 'John',
-      lastName: 'Doe',
-      middleName: 'Middle',
-      urlProfileAvatar: 'http://avatar.com/img.png',
-    );
+        authentication: AuthenticationRequest(
+          email: Seeds.email,
+          password: Seeds.password,
+        ),
+        firstName: Seeds.firstName,
+        lastName: Seeds.lastName,
+        cpf: Seeds.cpf);
 
     signUpModel = const SignUpModel(
-      email: 'test@example.com',
-      password: 'password123',
-      firstName: 'John',
-      lastName: 'Doe',
-      middleName: 'Middle',
-      urlProfileAvatar: 'http://avatar.com/img.png',
+      firstName: Seeds.firstName,
+      lastName: Seeds.lastName,
+      cpf: Seeds.cpf,
+      password: Seeds.password,
+      email: Seeds.email,
     );
     authenticationResponse = AuthenticationResponse(
       uid: 'uid',

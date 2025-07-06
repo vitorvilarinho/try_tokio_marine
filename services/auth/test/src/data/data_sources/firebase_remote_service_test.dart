@@ -123,8 +123,7 @@ void main() {
     const signUpRequest = SignUpRequest(
       firstName: 'John',
       lastName: 'Doe',
-      middleName: 'M',
-      urlProfileAvatar: 'url',
+      cpf: '12345600886',
       authentication: AuthenticationRequest(
         email: '',
         password: '',
